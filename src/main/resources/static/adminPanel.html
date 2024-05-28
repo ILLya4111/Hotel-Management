@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles/adminPanel.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img class="logo" src="images/logo.jpg" alt="Мій логотип">
+            </a>
+            
+            <div class="header-buttons">
+                <a href="userOffice.html">Username</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Панель адміністратора</h1>
+        <div class="panelList">
+            <div class="container1">
+                <p>Список готелів</p>
+                <form class="example">
+                    <input type="text" placeholder="Шукати бронь" name="search">
+                    <button type="submit">Шукати</button>
+                </form><hr>
+
+                <div class="list">
+                    <div class="block">
+                        <a href="HotelOffice.html" class="nameHotel">
+                            <img src="https://via.placeholder.com/150/92c952" alt="Фото готеля" class="hotel-view"><hr>
+                            <p>Назва готелю</p>
+                        </a> 
+                    </div>
+                    <div class="block">
+                        <a href="HotelOffice.html" class="nameHotel">
+                            <img src="https://via.placeholder.com/150/92c952" alt="Фото готеля" class="hotel-view"><hr>
+                            <p>Назва готелю</p>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="container1">
+                <p>Список користувачів</p>
+                <form class="example">
+                    <input type="text" placeholder="Шукати бронь" name="search">
+                    <button type="submit">Шукати</button>
+                </form><hr>
+
+                <div class="list">
+                    <div class="block">
+                        <a href="userOffice.html">
+                            <p class="infoUser">Username; </p>
+                            <p class="infoUser">Name; </p>
+                            <p class="infoUser">Surname;</p>
+                            <p class="infoUser">Phone; </p>
+                            <p class="infoUser">Email; </p>
+                            <p class="infoUser">Password.</p>
+                        </a>
+                    </div>
+                    <div class="block">
+                        <a href="userOffice.html">
+                            <p class="infoUser">Username; </p>
+                            <p class="infoUser">Name; </p>
+                            <p class="infoUser">Surname;</p>
+                            <p class="infoUser">Phone; </p>
+                            <p class="infoUser">Email; </p>
+                            <p class="infoUser">Password.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <h2>Наші контакти</h2>
+        <p>Email: bookhotel@example.com</p>
+        <p>Phone: +1234567890</p>
+    </footer>
+    
+</body>
+</html>

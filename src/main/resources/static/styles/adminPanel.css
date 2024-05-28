@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5a5a5a;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin: 0;
+}
+
+/* Стилі для логотипу */
+.logo {
+    width: 240px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 90px;
+}
+
+/* Стилі для кнопок */
+.header-buttons {
+    margin-left: auto; /* Поміщає кнопки в кінець контейнера */
+}
+
+/* Стилі для кнопок */
+.header-buttons a {
+    margin-left: 10px; /* Відступ між кнопками */
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #333;
+}
+
+/* Стилі для кнопок при наведенні */
+.header-buttons a:hover {
+    background-color: #333;
+    color: pink;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 5px solid orange;
+    margin: 20px;
+}
+
+.container1 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+    margin: 10px 15px;
+    width: 50%;
+}
+
+.example{
+    margin: 10px;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+    margin-right: 10px;
+    width: 507px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+form.example button {
+    width: 100px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 12px;
+
+
+}
+
+form.example button:hover {
+    background: #eb981c;
+}
+
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin: 0;
+}
+
+
+.block{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;    
+    margin: 10px;
+}
+
+.block a {
+    color: black;
+    text-decoration: none;
+}
+
+.block:hover {
+    background-color: pink;
+}
+
+.nameHotel{
+    text-decoration: none;
+    display: flex;
+}
+.nameHotel p {
+    margin: 0;
+    padding: 17px;
+    color: black;
+}
+
+.hotel-view {
+    width: 135px;
+    height: 76px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.panelList{
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+}
+
+.infoUser {
+    display: inline;
+}
+
+.list{
+    display: block;
+}
+

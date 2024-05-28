@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Назва готелю</title>
+    <link rel="stylesheet" href="styles/hotel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img class="logo" src="images/logo.jpg" alt="Мій логотип">
+            </a>
+
+            <div class="header-buttons">
+                <a href="register.html" id="btnHeader">Зареєструватися</a>
+                <a href="login.html" id="btnHeader1">Увійти</a>
+                <a id="user-profile" href="userOffice.html" style="display: none;"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="info">
+            <img id="hotelImage" src="" alt="Фото готелю" class="imgHotel">
+            <div class="regText">
+                <h1>Назва готелю</h1><hr>
+                <p> Адреса готелю</p><hr>
+                <p>опис готелю</p>
+            </div>
+        </div>
+
+        <div class="container1">
+            <h2 class="n">Номери:</h2><hr>
+            <form class="example">
+                <input type="text" placeholder="Пошук номера" name="search">
+                <button type="button" onclick="searchRooms()">Шукати</button>
+            </form>
+            <div id="roomsList"></div><hr>
+        </div>
+    </div>
+    
+
+    <footer id="contact">
+        <h2>Наші контакти</h2>
+        <p>Email: bookhotel@example.com</p>
+        <p>Phone: +1234567890</p>
+    </footer>
+
+    <script src="scripts/hotel.js"></script>
+</body>
+</html>

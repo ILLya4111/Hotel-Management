@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/register.css">
+    <meta charset="UTF-8">
+    <title>Редагування інформації</title>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <a href="index.html">
+            <img class="logo" src="images/logo.jpg" alt="Мій логотип">
+        </a>
+
+    </div>
+
+</header>
+<div class="container">
+
+    <div class="container1">
+        <h1>Редагування інформації</h1>
+        <hr>
+        <form id="editForm">
+            <div class="contName">
+                <div class="marginu">
+                    <label><b>Username</b></label>
+                    <input type="text" id="username" placeholder="Enter Username" readonly required>
+                </div>
+                <div class="marginu">
+                    <label><b>First Name</b></label>
+                    <input type="text" id="firstName" placeholder="Enter firstName" required>
+                </div>
+                <div class="marginu">
+                    <label><b>Second Name</b></label>
+                    <input type="text" id="secondName" placeholder="Enter secondName" required>
+                </div>
+            </div>
+            <div class="contName">
+                <div class="marginu1">
+                    <label><b>Phone number</b></label>
+                    <input type="tel" id="phone" placeholder="Enter phone">
+                </div>
+                <div class="marginu1">
+                    <label><b>Email</b></label>
+                    <input type="email" id="email" placeholder="Enter Email" required>
+                </div>
+            </div>
+            <button type="submit" id="submit" class="registerbtn">Зберегти зміни</button>
+        </form>
+    </div>
+
+
+</div>
+
+<script src="scripts/changeUser.js"></script>
+
+</body>
+</html>

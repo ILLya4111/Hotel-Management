@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/register.css">
+<meta charset="UTF-8">
+<title>Register</title>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <a href="index.html">
+            <img class="logo" src="images/logo.jpg" alt="Мій логотип">
+        </a>
+        
+    </div>
+        
+</header>
+    <div class="container">
+
+        <div class="container1">
+            <h1>Реєстрація</h1>
+            <p>Будь ласка, заповніть цю форму, щоб створити обліковий запис.</p>
+            <hr>
+            <form id="registrationForm">
+                <div class="contName">
+                    <div class="marginu">
+                        <label><b>Username</b></label>
+                        <input type="text" id="username" placeholder="Enter Username" required>
+                    </div>
+                    <div class="marginu">
+                        <label><b>firstName</b></label>
+                        <input type="text" id="firstName" placeholder="Enter firstName" required>
+                    </div>
+                    <div class="marginu">
+                        <label><b>secondName</b></label>
+                        <input type="text" id="secondName" placeholder="Enter secondName" required>
+                    </div>
+                </div>
+                <div class="contName">
+<!--                    <div class="marginu1">-->
+<!--                        <label><b>Phone number</b></label>-->
+<!--                        <input type="tel" id="phoneNumber" placeholder="Enter phone">-->
+<!--                    </div>-->
+                    <div class="marginu1">
+                        <label><b>Email</b></label>
+                        <input type="email" id="email" placeholder="Enter Email" required>
+                    </div>
+                </div>
+                <div class="contName">
+                    <div class="marginu1">
+                        <label><b>Password</b></label>
+                        <input type="password" id="password" placeholder="Enter Password" required>
+                    </div>
+                    <div class="marginu1">
+                        <label><b>Repeat Password</b></label><br>
+                        <input type="password" id="repeatPassword" placeholder="Repeat Password" required>
+                    </div>
+                </div>
+                <label><input type="checkbox" id="isHotelAdmin">Зареєструвати готель</label>
+            </form>
+            <hr>
+            <p>Створюючи обліковий запис, ви погоджуєтеся з нашими <a href="#">Умовами та політикою конфіденційності</a>.</p>
+
+            <button type="submit" id="submit" class="registerbtn">Зареєструвати</button>
+        </div>
+        
+        <div class="signin">
+            <p>Вже є акаунт? <a href="login.html">Увійти</a>.</p>
+        </div>
+
+    </div>
+    
+    <script src="scripts/register.js"></script>
+
+</body>
+</html>

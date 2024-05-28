@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5a5a5a;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    
+}
+
+/* Стилі для логотипу */
+.logo {
+    width: 240px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 90px;
+}
+
+/* Стилі для кнопок */
+.header-buttons {
+    margin-left: auto; /* Поміщає кнопки в кінець контейнера */
+}
+
+/* Стилі для кнопок */
+.header-buttons a {
+    margin-left: 10px; /* Відступ між кнопками */
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #333;
+}
+
+/* Стилі для кнопок при наведенні */
+.header-buttons a:hover {
+    background-color: #333;
+    color: pink;
+}
+
+.container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 5px solid orange;
+    margin: 20px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+}
+
+.imgHotel {
+    width: 621px;
+    height: 350px;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #999;
+    font-size: 14px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.regText {
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 750px;
+    height: 310px;
+    max-height: 310px;
+    max-width: 750px;
+}
+.regText p {
+    max-height: 166px; /* Наприклад, обмеження висоти тексту опису */
+    overflow-wrap: break-word; /* дозволяє переносити слова, якщо вони виходять за межі блоку */
+    overflow: auto; /* Додати прокрутку при необхідності */
+}
+
+.room-block {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 37px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.room-preview {
+    width: 270px;
+    height: 152px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.texti {
+    margin: 20px;
+}
+
+.t {
+    margin: 15px;
+}
+
+.container1 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+    margin: 10px 15px;
+}
+
+.n {
+    margin: 0 30px;
+}
+
+.ad {
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 49px 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #333;
+}
+
+.btns {
+    text-align: center;
+}
+
+.btn {
+    display: none;
+    border-radius: 80%;
+    
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    
+}
+
+.buttonsHotel {
+    position: absolute;
+    top: 190px;
+    right: 70px;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttonsHotel1{
+    position: absolute;
+    top: 190px;
+    right: 105px;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+    flex: 3; /* Розтягнення елементів, щоб зайняти рівний простір */
+    margin-right: 10px;
+
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid orange;
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+form.example button {
+    flex: 1;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+
+}
+
+form.example button:hover {
+    background: #eb981c;
+}
+
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.infoUsers{
+    display: flex;
+    border: 1px solid black;
+    margin: 5px 0;
+    background-color: #cbc9c9;
+    border-radius: 5px;
+}
+.infoUsers p {
+    margin: 5px;
+}

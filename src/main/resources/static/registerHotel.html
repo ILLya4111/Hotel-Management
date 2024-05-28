@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація Готелю</title>
+    <link rel="stylesheet" href="styles/registerHotel.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img class="logo" src="images/logo.jpg" alt="Мій логотип">
+            </a>
+            
+        </div>
+            
+    </header>
+
+    <div class="container">
+        <div class="container1">
+            <h1>Реєстрація Готелю</h1>
+            <form id="hotel-form">
+                <div class="image-container">
+                    <label class="image-placeholder" onclick="triggerHotelFileInput(this)">Вибрати файл</label>
+                    <input type="file" id="hotel_image" name="hotel_image" accept="image/*" onchange="previewImage(event, this.nextElementSibling, this.previousElementSibling)" required>
+                    <img id="hotel-preview" class="hotel-preview" src="" alt="Попередній перегляд зображення"/>
+                    <div class="regText">
+                        <label for="hotel_name">Назва Готелю:</label>
+                        <input type="text" id="hotel_name" name="hotel_name" required>
+
+                        <label for="hotel_address">Адреса Готелю:</label>
+                        <input type="text" id="hotel_address" name="hotel_address" required>
+
+                        <label for="hotel_description">Опис Готелю:</label>
+                        <textarea id="hotel_description" name="hotel_description" rows="6" required></textarea>
+                    </div>
+                </div>
+
+                <div id="rooms">
+                    <div class="room-block">
+                        <button type="button" class="remove-room" onclick="removeRoom(this)">✖︎</button>
+                        <div class="image-container">
+                            <label class="room-image-placeholder" onclick="triggerRoomFileInput(this)">Вибрати файл</label>
+                            <input type="file" class="room_image" name="room_image[]" accept="image/*" onchange="previewImage(event, this.nextElementSibling, this.previousElementSibling)">
+                            <img class="room-preview" src="" alt="Попередній перегляд зображення"/>
+                        </div>
+                        <div class="texti">
+                            <label for="room_type">Номер кімнати:</label>
+                            <input type="text" id="room_type" name="room_type[]" required>
+                        </div>
+                        <div class="texti">
+                            <label for="room_capacity">Кількість осіб:</label>
+                            <input type="number" id="room_capacity" name="room_capacity[]" min="1" required>
+                        </div>
+                        <div class="texti">
+                            <label for="room_price">Ціна за День (UAH):</label>
+                            <input type="number" id="room_price" name="room_price[]" min="0" required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="add-room" onclick="addRoom()">Додати номер</button>
+                <input type="submit" value="Зареєструвати Готель">
+            </form>
+        </div>
+    </div>
+
+
+<script src="scripts/registerHotel.js"></script>
+
+</body>
+</html>
